@@ -130,7 +130,7 @@
         .ethic-text h2 { text-align: left; margin-bottom: 20px; }
 
         /* Services Grid */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .services-grid { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
         .service-item { 
             background: var(--light); 
             border-radius: 12px; 
@@ -139,6 +139,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            flex: 0 1 340px;
+            min-width: 280px;
         }
         .service-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .service-item .service-image {
@@ -228,7 +230,7 @@
         <section class="section container">
             <div class="ethic-grid">
                 <div class="ethic-video">
-                    <video src="https://pixabay.com/videos/download/x-310115_medium.mp4" autoplay muted loop playsinline></video>
+                    <video src="static/video.mp4" autoplay muted loop playsinline></video>
                 </div>
                 <div class="ethic-text">
                     <h2 class="section-title">Our Work Ethic</h2>
